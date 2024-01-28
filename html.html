@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Src/css.css">
+    <title>carrossel</title>
+</head>
+
+<body>
+
+    <div class="Container">
+       <div class="container-filho"> 
+        <div class="prev" onclick="addSlides(-1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 70 71" fill="none"
+                class="seta_left">
+                <rect x="-1.5" y="1.5" width="67" height="67" rx="33.5"
+                    transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 67 0.0699462)" stroke="#3D6E6B" stroke-width="3" />
+                <path d="M41 17.0699L23.15 34.9199L41 52.7699" stroke="#3D6E6B" stroke-width="3"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+       
+       
+        
+        <div class="slides fade">
+                <img src="./Src/img/massagem-bucha.png" alt="img-bucha" class="item current-item">
+                <p class="content">Pindas chinesas</p>
+                <span>30 - 40 minutos</span>
+                <span class="value">R$ 100,00</span>
+            </div>
+
+            <div class="slides fade">
+                <img src="./Src/img/massagem-pernas.png" alt="img-bucha" class="item current-item">
+                <p class="content">Pindas chinesas</p>
+                <span>30 - 40 minutos</span>
+                <span class="value">R$ 100,00</span>
+
+            </div>
+            <div class="slides fade">
+                <img src="./Src/img/massagem.png" alt="img-bucha" class="item current-item">
+                <p class="content">Pindas chinesas</p>
+                <span>30 - 40 minutos</span>
+                <span class="value">R$ 100,00</span>
+
+
+            </div>
+         
+           
+            
+      
+ 
+
+        <div class="next" onclick="addSlides(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 70 71" fill="none"
+                class="seta-right">
+                <rect x="1.5" y="-1.5" width="67" height="67" rx="33.5" transform="matrix(1 0 0 -1 0 67.0698)"
+                    stroke="#3D6E6B" stroke-width="3" />
+                <path d="M29 53.0698L46.85 35.2198L29 17.3698" stroke="#3D6E6B" stroke-width="3"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+   </div> 
+        <div class="footer">
+            <div class="dot-box">
+                <svg class="dot" onclick="currentSlide(1)" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                    viewBox="0 0 12 13" fill="none">
+                    <circle cx="6" cy="6.42407" r="6" fill="#3D6E6B" />
+                </svg>
+                <svg class="dot" onclick="currentSlide(2)" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                    viewBox="0 0 12 13" fill="none">
+                    <circle cx="6" cy="6.42407" r="6" fill="#3D6E6B" />
+                </svg>
+                <svg class="dot" onclick="currentSlide(3)" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                    viewBox="0 0 12 13" fill="none">
+                    <circle cx="6" cy="6.42407" r="6" fill="#3D6E6B" />
+                </svg>
+                <svg class="dot" onclick="currentSlide(4)" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                    viewBox="0 0 12 13" fill="none">
+                    <circle cx="6" cy="6.42407" r="6" fill="#3D6E6B" />
+                </svg>
+    
+            </div>
+    </div>
+   
+   </div>
+
+    <script src="./Src/js.js"></script>
+
+</body>
+
+</html>
