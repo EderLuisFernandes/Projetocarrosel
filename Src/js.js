@@ -1,16 +1,17 @@
 let index = 1;
 showSlides(index);
 
-
+// BOTAO DE IDA
 function addSlides(n) {
   showSlides((index += n));
 }
 
-
+// BOTAO DE VINDA
 function currentSlide(n) {
   showSlides((index = n));
 }
 
+// ONDE TUDO ACONTECE
 function showSlides(n) {
   let slides = document.querySelectorAll(".slides");
   let dots = document.querySelectorAll(".dot");
